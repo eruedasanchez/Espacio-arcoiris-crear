@@ -12,56 +12,62 @@
     </head>
     <body>
         <header>
-            <div>
-                <!--logo-->
-                <a href=""><img width="200" height="200" src="./assets/img/index/header/logo-esp-arcoiris-crear.png" alt="Arcoiris de cinco colores sostenido por dos manos con palabras en las nubes"></a>
-            </div>
-            <section>
-                <!--La barra de navegacion y los iconos de inicio trabajan dentro de la misma seccion-->
+            <div class="container-header"> <!--Contenedor donde voy a posicionar a los elementos-->
+                <div>
+                    <!--logo-->
+                    <a href="./index.html"><img width="170" height="170" src="./assets/img/index/header/logo-esp-arcoiris-crear.png" alt="Arcoiris de cinco colores sostenido por dos manos con palabras en las nubes"></a>
+                </div>
+                
                 <nav>
                     <!--Barra de navegacion-->
                     <ul class="navbar">
                         <li><a href="./index.html">Inicio</a></li>  
                         <li><a href="./pages/academia.html" target="_blank">Academia</a></li>
                         <li><a href="./pages/tienda.html"   target="_blank">Tienda</a></li>
-                        <li><a href="./pages/staff.html">Staff</a></li>
+                        <li><a href="./pages/staff.html">Nosotros</a></li>
                         <li><a href="">Promociones</a></li>
-                        
                     </ul>
                 </nav>
-                <div>
-                    <!--iconos de inicio-->
-                    <ul class="header-icons">
-                        <li><a href=""><img src="./assets/img/index/header/login.png" alt="icono inicio sesion"> <span>Login</span> </a></li>
-                        <li><a href=""><img src="./assets/img/index/header/carrito.png" alt="icono carrito"> <span>Carrito</span>   </a></li>
-                        <li><a href=""><img src="./assets/img/index/header/help.png" alt="icono signo pregunta"> <span>Ayuda</span> </a></li>
-                        <li><a href="./pages/taller.html"><img src="./assets/img/index/header/location.png" alt="icono ubicacion"> <span>Taller</span></a></li>
-                    </ul>
-                </div>
-            </section>
+    
+                    <div>
+                        <!--iconos de inicio-->
+                        <ul class="header-icons">
+                            <li><a href=""><img width="28" height="28" src="./assets/img/index/header/login.png" alt="icono inicio sesion"> <span>Login</span> </a></li>
+                            <li><a href=""><img width="28" height="28" src="./assets/img/index/header/carrito.png" alt="icono carrito"> <span>Carrito</span>   </a></li>
+                            <li><a href=""><img width="25" height="25" src="./assets/img/index/header/help.png" alt="icono signo pregunta"> <span>Ayuda</span> </a></li>
+                            <li><a href="./pages/taller.html"><img width="28" height="28" src="./assets/img/index/header/location.png" alt="icono ubicacion"> <span>Taller</span></a></li>
+                        </ul>
+                    </div>
+            </div>
         </header>
 
         <main>
-            <section class="main-title-subtitle">
-                <!--Titulo principal-->
-                <div>
-                    <!--Titulo y subtitulo principal-->
+            <div class="main-title-container">
+                <!--Contenedor del titulo principal, subtitulo y la imagen del taller-->
+                <div class="main-title">
+                    <!--Titulo principal-->
                     <h1>Un nuevo concepto en el mundo de la gastronomia</h1>
-                    <p>Cursos, workshops y seminarios presenciales u online <br> con los pasteleros y cake designers mas calificados del mercado. <br>
-                        Tienda online con herramientas e insumos de vanguardia para aplicar a tus productos </p>
                 </div>
-                <!--Imagen principal-->
-                    <img width="450" height="580" src="./assets/img/index/body/titulo-principal/panoramica-espacio-arcoiris-crear.jpg" alt="Taller gastronomico nordico">
-            </section>
+                <div class="main-subtitle">
+                    <!--Subtitulo principal-->
+                    <h2>Cursos, workshops y seminarios presenciales u online <br> con los pasteleros y cake designers mas calificados del mercado. <br>
+                        Tienda online con herramientas e insumos de vanguardia para aplicar a tus productos</h2>
+                </div>
+                <div class="main-image">
+                    <!--imagen principal-->
+                    <img width="500" height="600" src="./assets/img/index/body/titulo-principal/panoramica-espacio-arcoiris-crear.jpg" alt="Taller gastronomico nordico">
+                </div>
 
+            </div>
+            
             <section class="section-images">
                 <!--Seccion con imagenes-->
-                <div class="presencial">
+                <div href="#academia-presencial" class="presencial">
                     <!--presencial-->
                     <p>Presencial</p>
                     <a href="./pages/academia.html" target="_blank">Ver mas</a>
                 </div>
-                <div class="online">
+                <div href="#academia-online" class="online">
                     <!--online-->
                     <p>Online</p>
                     <a href="./pages/academia.html" target="_blank">Ver mas</a>
