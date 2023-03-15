@@ -18,12 +18,12 @@ header{
     flex-flow: row wrap;
     justify-content: space-between;
     padding-top: 40px;  
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 40px; 
+    /* padding-right: 40px; */
 }
 
 .navbar{
-    width: 70%;
+    width: 70%; 
     display: flex;
     list-style: none;
     padding-right: 80px;
@@ -182,26 +182,22 @@ header{
 
 .container-main-title{
     background-color: #FCEFE4;
-    width: 100%;
-    height: 670px;
+    /* saco el width para que se adapte al width del header */
+    height: 430px;
     display: grid;
-    grid-template-columns: repeat(2,840px) 10px;
-    grid-template-rows: repeat(6,100px);
+    grid-template-columns: 840px 490px;
+    grid-template-rows: repeat(4,100px);
     /* grid-template: repeat(6,100px) / repeat(3,450px); */  /* rows / columns */
     grid-template-areas: 
-    "title    image image"
-    "title    image image"
-    "subtitle image image"
-    "subtitle image image"
-    "subtitle image image"
-    "subtitle image image";
+    "title    image"
+    "title    image"
+    "subtitle image"
+    ".        image";
     padding-left: 40px;
-    padding-right: 160px;
 }
 
 .main-title{
-    grid-area: title;                                           /* ordeno a cada item la posicion que ocupa en la matriz */
-    background-color: #FCEFE4;
+    grid-area: title;                                /* ordeno a cada item la posicion que ocupa en la matriz */
     /* Movimientos self solo para los hijos */
     justify-self: center;
     align-self: center;
@@ -216,10 +212,7 @@ header{
 
 .main-subtitle{
     grid-area: subtitle;                                           /* ordeno a cada item la posicion que ocupa en la matriz */
-    background-color: #FCEFE4;
     /* Movimientos self solo para los hijos */
-    justify-self: center;
-    align-self: center;
 }
 
 
@@ -233,14 +226,16 @@ header{
 }
 
 .main-image{
-    width: 626px;
-    height: 600px;
-    grid-area: image;                                           /* ordeno a cada item la posicion que ocupa en la matriz */
+    background-color: #FCEFE4;
+    /* width: 100%; */                         /* saco el width para que se adapte al width del header */
+    height: 410px;
+    grid-area: image;                          /* ordeno a cada item la posicion que ocupa en la matriz */
+    padding-left: 90px;
 }
 
 .container-images{
-    width: 100%;                         /* ancho de pantalla */
-    height: 300px;                       /* largo de pantalla */
+    /* width: 100%; */                         /* ancho de pantalla */
+    height: 300px;                             /* largo de pantalla */
     background-color: #FCEFE4;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
