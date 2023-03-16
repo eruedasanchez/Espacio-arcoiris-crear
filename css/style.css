@@ -106,16 +106,74 @@ header{
     font-size: 16px;
 }
 
-.footer-taller{
-    width: 100%;
-    height: 120px;
-    background-color:#FCEFE4;
+.container-information{
+    /* width: 100%; */                         /* ancho de pantalla */
+    height: 170px;                             /* largo de pantalla */
+    background-color: #FCEFE4;
+    display: grid;
+    grid-template-columns: repeat(4, 332.6px);
+    grid-template-rows: 50px repeat(3, 30px);
+    padding-left: 40px;
 }
 
-.footer-taller h2,p{
+
+.footer-taller{
+    width: 100%;
+    /* height: 290px; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;     
+    order: 1;                         
+}
+
+.footer-taller h2{
+    width: 100%; 
+    height: 100%; 
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
+
+.footer-taller h3{
+    width: 100%; 
+    height: 35px;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.footer-taller h4{
+    width: 100%; 
+    height: 30px;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.footer-taller h5{
+    width: 100%; 
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
 
 .footer-sale{
     width: 100%;
@@ -145,28 +203,92 @@ header{
 
 .footer-information{
     width: 100%;
-    height: 120px;
-    background-color:#FCEFE4;
+    /* height: 290px; */
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;     
+    order: 3;                         
 }
 
-.footer-information h2,p{
+.footer-information h2{
+    width: 100%; 
+    height: 100%; 
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-information h3{
+    width: 100%; 
+    height: 35px;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.footer-information h4{
+    width: 100%; 
+    height: 30px;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.footer-information h5{
+    width: 100%; 
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 .footer-social-networks{
     width: 100%;
-    height: 190px;
-    background-color:#FCEFE4;
+    /* height: 290px; */
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;     
+    order: 4;                         
 }
 
 .footer-social-networks h2{
+    width: 100%; 
+    height: 100%; 
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    background-color: aqua;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-.footer-redes{
+.footer-redes li{
     list-style: none;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
 }
 
 .footer-redes li a{
@@ -176,8 +298,6 @@ header{
 
 
 .copyright{
-    width: 100%;                         /* ancho de pantalla */
-    height: 42px;                        /* largo de pantalla */
     background-color: #FCEFE4;
 }
 
