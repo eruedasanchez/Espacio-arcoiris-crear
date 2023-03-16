@@ -62,15 +62,48 @@ header{
 
 /***************************** footer *****************************/
 
-.newsletter{
-    width: 100%;                    /* ancho de pantalla */
-    height: 120px;                  /* largo de pantalla */
-    background-color:#FCEFE4;
+.container-newsletter{
+    /* width: 100%; */
+    height: 120px;
+    background-color: #FCEFE4;  
+    display: grid;
+    grid-template-columns: repeat(2, 665px);
+    grid-template-rows:    repeat(2, 50px);
+    grid-template-areas: 
+    "recibi          form"
+    "suscribite      ."; 
+    padding-left: 40px;
 }
 
-.newsletter-text p,h2{
+.container-newsletter p{
+    grid-area: recibi;                                /* ordeno a cada item la posicion que ocupa en la matriz */
+    /* Movimientos self solo para los hijos */
+    justify-self: center;
+    align-self: center;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.container-newsletter h2{
+    grid-area: suscribite;                                /* ordeno a cada item la posicion que ocupa en la matriz */
+    /* Movimientos self solo para los hijos */
+    justify-self: center;
+    align-self: center;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.container-newsletter h3{
+    grid-area: form;                                /* ordeno a cada item la posicion que ocupa en la matriz */
+    /* Movimientos self solo para los hijos */
+    justify-self: center;
+    align-self: center;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 .footer-taller{
@@ -159,26 +192,6 @@ header{
 /****************************** index.html ******************************/
 
 /* body */
-
-/* .main-title-subtitle{
-    width: 100%;  */                       /* ancho de pantalla */
-    /* height: 700px;        */               /* largo de pantalla */
-    /* background-color: #FCEFE4;
-}
-
-.main-title-subtitle h1{
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    text-align: left;
-}
-
-.main-title-subtitle p{
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    text-align: left;
-}
-*/
 
 .container-main-title{
     background-color: #FCEFE4;
@@ -389,30 +402,65 @@ header{
     gap: 90px;
 }
 
-.section-promos{
-    width: 100%;
-    height: 470px;
-    background-color:#FCEFE4;                                      
+.container-promos{
+    /* width: 100%; */
+    height: 285px;
+    background-color: #FCEFE4;  
+    display: grid;
+    grid-template-columns: 1030px 300px;
+    grid-template-rows: 45px 100px repeat(2, 45px);
+    grid-template-areas: 
+    "hasta          image"
+    "veinticinco    image"
+    "prodsel        image"
+    "vermas         image";
+    padding-left: 40px;
 }
 
-.section-promos div p{
+.text-promo p{
+    grid-area: hasta;                                /* ordeno a cada item la posicion que ocupa en la matriz */
+    /* Movimientos self solo para los hijos */
+    justify-self: center;
+    align-self: center;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+.text-promo h2{
+    grid-area: veinticinco;
+    justify-self: center;
+    align-self: center;
+    font-style: bold;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+}
+
+.text-promo h3{
+    grid-area: prodsel;
+    justify-self: center;
+    align-self: center;
+    font-style: bold;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 
-.section-promos div h2{
+.text-promo a{
+    grid-area: vermas;
+    justify-self: center;
+    align-self: center;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    font-style: bold;
+    font-size: 16px;
+    text-decoration: none;
 }
 
-.section-promos div a{
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    text-decoration: none;
+.image-promo{
+    background-color: #FCEFE4;
+    height: 250px;
+    grid-area: image;
 }
 
 /****************************** taller.html ******************************/
