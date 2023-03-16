@@ -174,16 +174,26 @@ header{
     grid-row-end: 5;
 }
 
-
 .footer-sale{
     width: 100%;
-    height: 140px;
-    background-color:#FCEFE4;
+    /* height: 290px; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;     
+    order: 2;                         
 }
 
 .footer-sale h2{
+    width: 100%; 
+    height: 100%; 
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .footer-sale-contact{
@@ -191,6 +201,7 @@ header{
 }
 
 .footer-sale-contact li a{
+    height: 100%;
     text-decoration: none;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
@@ -198,7 +209,7 @@ header{
 }
 
 .footer-sale-contact a span{
-    vertical-align: 70%;
+    vertical-align: 35%;
 }
 
 .footer-information{
@@ -273,29 +284,30 @@ header{
     height: 100%; 
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 29px;
-    background-color: aqua;
+    font-size: 24px;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.footer-redes{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 13px;
 }
 
 .footer-redes li{
     list-style: none;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-self: center;
-    align-self: center;
 }
 
 .footer-redes li a{
     text-decoration: none;
     color: #7AA7A7;
 }
-
 
 .copyright{
     background-color: #FCEFE4;
