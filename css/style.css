@@ -599,7 +599,7 @@ header{
 
 /* body */
 
-h1{
+.taller-title h1{
     height: 85px;
     background-color: #FCEFE4;
     color: #7AA7A7;
@@ -716,36 +716,79 @@ h1{
 
 /* body */
 
-.integrante{
-    width: 100%;                         /* ancho de pantalla */
-    height: 280px;                       /* largo de pantalla */
+.staff-title h1{
+    height: 85px;
     background-color: #FCEFE4;
-}
-
-.integrante div h2{
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    padding-left: 40px;
+}
+
+.container-integrants{
+    display: flex;
+    flex-direction: row;                        /* movimiento en sentido vertical */
+    flex-wrap: wrap;
+    height: 350px;                              
+    background-color: #FCEFE4;
+    justify-content: space-around;
+    align-items: center;                       /* alinear elementos */
+    row-gap: 20px;
+    /* align-content: flex-end; */              /* solo funciona cuando tengo multilinea */ 
+    padding-left: 40px;
 
 }
 
-.integrante div p{
+.integrant{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 330px;
+    height: 290px;
+    background-color: #FCEFE4;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-top: 16px;
+    border-style: solid;
+    border-color: #7AA7A7;
+}
+
+.integrant div h2,p{
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    
+    text-align: center; 
 }
 
-.integrante div a{
+.integrant div a{
     text-decoration: none;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
 }
 
-.integrante div a span{
-    vertical-align: 66%;
+.integrant div a span{
+    vertical-align: 40%;
 }
+
+/*
+.juliana{
+    width: 272px;
+    height: 272px;
+    background-color: lightcoral;
+    order: 2;
+}
+
+.magdalena{
+    width: 272px;
+    height: 272px;
+    background-color: lightyellow;
+    order: 3;
+}
+*/
+
+
+
+
+
 
 /****************************** academia.html ******************************/
 
