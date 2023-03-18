@@ -552,11 +552,10 @@ header{
 .text-promo p{
     grid-area: hasta;                                /* ordeno a cada item la posicion que ocupa en la matriz */
     /* Movimientos self solo para los hijos */
-    justify-self: center;
-    align-self: center;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
+    text-align: start;
 }
 
 .text-promo h2{
@@ -735,7 +734,6 @@ header{
     row-gap: 20px;
     /* align-content: flex-end; */              /* solo funciona cuando tengo multilinea */ 
     padding-left: 40px;
-
 }
 
 .integrant{
@@ -768,27 +766,6 @@ header{
 .integrant div a span{
     vertical-align: 40%;
 }
-
-/*
-.juliana{
-    width: 272px;
-    height: 272px;
-    background-color: lightcoral;
-    order: 2;
-}
-
-.magdalena{
-    width: 272px;
-    height: 272px;
-    background-color: lightyellow;
-    order: 3;
-}
-*/
-
-
-
-
-
 
 /****************************** academia.html ******************************/
 
@@ -888,38 +865,72 @@ header{
 
 /****************************** tienda.html ******************************/
 
-.tienda-heart-mold{
-    width: 100%;
-    height: 270px;
-    background-color:#FCEFE4;                                      
-    background-image: url("../assets/img/tienda/body/herramientas/heart-mold.jpg");
-    background-position: left;                               
-    background-repeat: no-repeat;            
-    background-size: contain; 
-    /* background-size: cover; */                                                       
+.tienda-titles h2{
+    height: 60px;
+    background-color: #FCEFE4;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
 }
 
-.tienda-picos{
-    width: 100%;
-    height: 270px;
-    background-color:#FCEFE4;                                      
-    background-image: url("../assets/img/tienda/body/herramientas/picos.jpg");
-    background-position: left;                               
-    background-repeat: no-repeat;            
-    background-size: contain; 
-    /* background-size: cover; */                                                       
+.container-products-courses{
+    display: flex;
+    flex-direction: row;                        /* movimiento en sentido vertical */
+    flex-wrap: wrap;
+    height: 390px;                              
+    background-color: #FCEFE4;
+    justify-content: space-around;
+    align-items: center;                       /* alinear elementos */
+    row-gap: 20px;
+    /* align-content: flex-end; */              /* solo funciona cuando tengo multilinea */ 
+    padding-left: 40px;
 }
 
-.tienda-cake-designer{
-    width: 100%;
-    height: 270px;
-    background-color:#FCEFE4;                                      
-    background-image: url("../assets/img/tienda/body/capacitaciones-online-presencial/cake-designer.jpg");
-    background-position: left;                               
-    background-repeat: no-repeat;            
-    background-size: contain; 
-    /* background-size: cover; */                                                       
+.product{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 260px;
+    height: 290px;
+    background-color: #FCEFE4;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 16px;
+    border-style: solid;
+    border-color: #7AA7A7;
 }
+
+.details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #FCEFE4;
+    justify-content: center;
+    align-items: center;
+}
+
+.details h3{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
+}
+
+.details p{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bolder; 
+}
+
+.details button a{
+    text-decoration: none;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
 
 
 
